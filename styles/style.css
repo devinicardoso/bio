@@ -89,6 +89,10 @@ section article div h3{
 
 footer {
   text-align: center;
-  text-decoration: none;
   color: #fff;
+}
+
+footer a#vini{
+  text-decoration: none;
+  color: #000;
 }
