@@ -17,6 +17,7 @@ body {
 	background-color: #17171C;
 }
 
+
 /* header */
 
 header {
@@ -36,18 +37,42 @@ header h1 {
 	color: #fff;
 }
 
-header p {
+header p.line {
+  border-right: 2px solid rgba(255, 255, 255, .75);
   font-size: 120%;
   color: #c0c0c0;
+  text-align: center;
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
-span{
-  animation: blink 1s infinite;
+
+/* animation */
+
+.typing-animation {
+  animation: blinkCursor 1s steps(60) infinite normal, typing 4s steps(60) 1s normal both;
 }
 
-@keyframes blink{
-  to{opacity: .0;}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 5.7em;
+  }
 }
+
+@keyframes blinkCursor{
+  from {
+    border-right-color: rgba(255, 255, 255, .75);
+  }
+  to {
+    border-right-color: transparent;
+    
+  }
+}
+
 
 /* section */
 
