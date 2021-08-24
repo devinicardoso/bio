@@ -35,9 +35,18 @@ header img {
 header h1 {
 	color: #fff;
 }
+
 header p {
   font-size: 120%;
   color: #c0c0c0;
+}
+
+span{
+  animation: blink 1s infinite;
+}
+
+@keyframes blink{
+  to{opacity: .0;}
 }
 
 /* section */
