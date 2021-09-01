@@ -51,7 +51,7 @@ header p.line {
 /* animation */
 
 .typing-animation {
-  animation: blinkCursor 1s steps(60) infinite normal, typing 4s steps(60) 1s normal both;
+  animation: blinkCursor 1s steps(10) infinite normal, typing 1.7s steps(20) 1s normal both;
 }
 
 @keyframes typing {
