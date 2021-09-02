@@ -76,7 +76,7 @@ header p.line {
 
 /* section */
 
-section article{
+section{
 	display: flex;
 	justify-items: center;
 	flex-wrap: wrap;
@@ -84,7 +84,7 @@ section article{
 	margin: 20px;
 }
 
-section article a{
+section a{
   text-decoration: none;
   flex-basis: 200px;
   justify-content: space-between;
@@ -92,7 +92,7 @@ section article a{
   margin: 20px;
 }
 
-section article div{
+section div{
   min-height: 100px;
   border-radius: 8px;
   display: flex;
@@ -103,17 +103,17 @@ section article div{
   border: 3px solid #17171C;
 }
 
-section article div:hover{
+section div:hover{
   border: 3px solid #fff;
 }
 
-section article div .iconify{
+section div .iconify{
   font-size: 26px;
   margin-bottom: 10px;
   color: #fff;
 }
 
-section article div h3{
+section div h3{
   text-align: center;
   line-height: 23px;
   font-weight: 500;
