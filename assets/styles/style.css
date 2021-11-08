@@ -102,7 +102,7 @@ section div{
   min-height: 70px;
   border-radius: 30px;
   display: flex;
-  flex-direction: row;
+  flex-direction: colunm;
   justify-content: center;
   align-items: center;
   padding: 4px;
