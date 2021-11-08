@@ -12,8 +12,8 @@ html {
 }
 
 body {
-	color:  fff;
-	background-image: url('../assets/image/background.jpg');
+	background-image: url('/assets/image/background.jpg');
+  background-repeat: no-repeat;
 	background-size: cover;
 }
 
@@ -25,7 +25,9 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  margin-bottom: 1rem;
+  
+
+  margin: 100px 0 40px 0;
 }
 header img {
   height: 125px;
@@ -39,14 +41,17 @@ header img {
 }
 
 header h1 {
-	color: #fff;
-  font-size: 30px;
+  font-size: 45px;
+  font-weight: 900;
+  color: white; 
+  text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 header p.line {
   border-right: 2px solid rgba(255, 255, 255, .75);
-  font-size: 100%;
-  color: #c0c0c0;
+  font-size: 120%;
+  color: #f7f0f0;
+  text-shadow: black 0.1em 0.1em 0.2em;
   text-align: center;
   margin: 0 auto;
   white-space: nowrap;
@@ -116,27 +121,65 @@ section div:hover{
 section div .iconify{
   font-size: 25px;
   margin: 10px 25px 10px 0;
-  color: #fff;
+  color: #000;
 }
 
 section div h3{
   text-align: center;
   line-height: 23px;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
-  color: #fff;
+  color: #000;
 }
 
 footer {
-  text-align: center;
-  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  color: #000;
 }
 
 a#vini{
+  font-size: 18px;
+  font-weight: 600;
   text-decoration: none;
-  color: #c0c0c0;
+  color: #ffffff;
+  text-shadow: black 0.1em 0.1em 0.2em;
+
 }
 
 a#vini:hover {
-  color: #363636;
+  color: #c5c5c5;
+}
+
+@media (max-width: 600px){ 
+  header {
+    margin: 50px 0 40px 0;
+  }
+  
+  header h1 {
+    font-size: 25px;
+  }
+
+  header p.line {
+    font-size: 85%;
+  }
+
+  footer {
+  position: relative;
+  left: 17%;
+  }
+}
+
+@media (max-width: 370px) {
+  header {
+    flex-direction: column;
+  }
+
+  footer {
+    left: 7%;
+  }
+  a#vini{
+    font-size: 15px;
+  }
 }
