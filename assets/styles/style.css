@@ -13,8 +13,21 @@ html {
 
 body {
   background-color: #131219;
+  background-image: url('/assets/image/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
+
+#loading img{
+  margin-top: 300px;
+  width: 250px;
+  height: 200px;
+}
+
+#loading p {
+  /* text-align: center; */
+}
 
 /* header */
 
