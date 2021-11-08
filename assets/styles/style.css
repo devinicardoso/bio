@@ -92,6 +92,7 @@ section{
 }
 
 section a{
+  vertical-align: middle;
   text-decoration: none;
   flex-basis: 250px;
   justify-content: space-between;
