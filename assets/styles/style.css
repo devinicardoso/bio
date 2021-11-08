@@ -15,7 +15,8 @@ body {
 	/* padding: 10px; */
 	color:  fff;
 	//background-color: #17171C;
-	//background-image: url('assets/image/background.jpg');
+	background-image: url('assets/image/background.jpg');
+	background-size: cover;
 }
 
 
