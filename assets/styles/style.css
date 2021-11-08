@@ -14,7 +14,8 @@ html {
 body {
 	/* padding: 10px; */
 	color:  fff;
-	background-color: #17171C;
+	//background-color: #17171C;
+  //background-image: url();
 }
 
 
@@ -92,7 +93,7 @@ section{
 
 section a{
   text-decoration: none;
-  flex-basis: 190px;
+  flex-basis: 250px;
   justify-content: space-between;
   flex-grow: 1;
   margin: 20px;
@@ -100,7 +101,7 @@ section a{
 
 section div{
   min-height: 50px;
-  border-radius: 30px;
+  border-radius: 40px;
   display: flex;
   flex-direction: colunm;
   justify-content: center;
