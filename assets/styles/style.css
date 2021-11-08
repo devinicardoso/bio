@@ -13,9 +13,9 @@ html {
 
 body {
   background-color: #c0c0c0;
-	background-image: url('/assets/image/background.jpg');
+	background-image: url('/assets/image/background2.jpg');
   background-repeat: no-repeat;
-	background-size: auto;
+	background-size: cover
 }
 
 
@@ -137,7 +137,7 @@ footer {
   position: absolute;
   bottom: 0;
   left: 40%;
-  color: #000;
+  color: #c0c0c0;
 }
 
 a#vini{
