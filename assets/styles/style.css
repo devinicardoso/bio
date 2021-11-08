@@ -15,7 +15,7 @@ body {
 	/* padding: 10px; */
 	color:  fff;
 	//background-color: #17171C;
-  //background-image: url();
+	//background-image: url();
 }
 
 
@@ -116,7 +116,7 @@ section div:hover{
 
 section div .iconify{
   font-size: 25px;
-  margin: 0 25px 10px 0;
+  margin: 10px 25px 10px 0;
   color: #fff;
 }
 
