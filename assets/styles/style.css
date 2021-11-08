@@ -151,6 +151,10 @@ a#vini:hover {
 }
 
 @media (max-width: 600px){ 
+  html {
+    width: auto;
+  }
+
   header {
     margin: 50px 0 25px 0;
   }
