@@ -152,7 +152,7 @@ a#vini:hover {
 
 @media (max-width: 600px){ 
   html {
-    width: auto;
+    /* width: 320px; */
   }
 
   header {
@@ -160,17 +160,22 @@ a#vini:hover {
   }
   
   header h1 {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   header p.line {
     font-size: 85%;
   }
 
+  section{
+    margin: 0;
+  }
+
   footer {
-  margin-top: 100px;
-  position: relative;
-  left: 17%;
+    width: 320px;
+    margin-top: 100px;
+    position: relative;
+    left: 10%;
   }
 }
 
