@@ -44,15 +44,15 @@ header img {
 header h1 {
   font-size: 45px;
   font-weight: 900;
-  color: white; 
-  text-shadow: black 0.1em 0.1em 0.2em;
+  color: #fff; 
+  text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.2em;
 }
 
 header p.line {
   border-right: 2px solid rgba(255, 255, 255, .75);
-  font-size: 120%;
+  font-size: 130%;
   color: #f7f0f0;
-  text-shadow: black 0.1em 0.1em 0.2em;
+  text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.2em;
   text-align: center;
   margin: 0 auto;
   white-space: nowrap;
@@ -167,6 +167,7 @@ a#vini:hover {
   }
 
   footer {
+  margin-top: 50px;
   position: relative;
   left: 17%;
   }
