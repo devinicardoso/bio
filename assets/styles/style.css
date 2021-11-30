@@ -13,6 +13,9 @@ html {
 
 body {
   background-color: #131219;
+  background-image: url('/assets/image/background3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 
@@ -109,17 +112,17 @@ section div{
   justify-content: center;
   align-items: center;
   padding: 4px;
-  border: 3px solid #17171C;
+  border: 1px solid rgba(172, 170, 170, 0.692);
 }
 
 section div:hover{
-  border: 3px solid #fff;
+  border: 1px solid rgb(255, 255, 255);
 }
 
 section div .iconify{
   font-size: 25px;
   margin: 10px 25px 10px 0;
-  color: #000;
+  color: #fff;
 }
 
 section div h3{
@@ -127,7 +130,7 @@ section div h3{
   line-height: 23px;
   font-weight: 600;
   font-size: 16px;
-  color: #000;
+  color: #fff;
 }
 
 footer {
@@ -151,9 +154,6 @@ a#vini:hover {
 }
 
 @media (max-width: 600px){ 
-  html {
-    /* width: 320px; */
-  }
 
   header {
     margin: 50px 0 25px 0;
