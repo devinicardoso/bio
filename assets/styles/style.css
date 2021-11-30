@@ -12,8 +12,8 @@ html {
 }
 
 body {
-  background-color: #131219;
-  background-image: url('/assets/image/background.jpg');
+  //background-color: #131219;
+  backgroung-color: #413C58;
   background-size: cover;
   background-repeat: no-repeat;
 }
