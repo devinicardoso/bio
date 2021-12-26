@@ -13,7 +13,7 @@ html {
 
 body {
   background-color: #131219;
-  background-image: url('/assets/image/background3.jpg');
+  background-image: url('/assets/image/background4.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -134,10 +134,12 @@ section div h3{
 }
 
 footer {
+  background-color: rgba(82, 82, 82, 0.493);
+  width: 857px;
   position: absolute;
   bottom: 0;
-  left: 40%;
-  color: #c0c0c0;
+  padding-left: 250px;
+  color: #d3d3d3;
 }
 
 a#vini{
@@ -151,43 +153,4 @@ a#vini{
 
 a#vini:hover {
   color: #c5c5c5;
-}
-
-@media (max-width: 600px){ 
-
-  header {
-    margin: 50px 0 25px 0;
-  }
-  
-  header h1 {
-    font-size: 20px;
-  }
-
-  header p.line {
-    font-size: 85%;
-  }
-
-  section{
-    margin: 0;
-  }
-
-  footer {
-    width: 320px;
-    margin-top: 100px;
-    position: relative;
-    left: 10%;
-  }
-}
-
-@media (max-width: 370px) {
-  header {
-    flex-direction: column;
-  }
-
-  footer {
-    left: 7%;
-  }
-  a#vini{
-    font-size: 15px;
-  }
 }
