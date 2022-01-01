@@ -1,3 +1,3 @@
 function portifolio() {
-    alert('Estamos trabalhando nesta página! Fique ligado 🚧🚧')
+    alert('Estamos trabalhando nesta página! Volte em outro momento 🚧🚧')
 }
