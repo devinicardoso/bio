@@ -178,7 +178,7 @@ a#vini:hover {
   }
 }
 
-@media (max-width: 370px) {
+@media (max-width: 425px) {
   header {
     flex-direction: column;
   }
@@ -188,5 +188,15 @@ a#vini:hover {
   }
   a#vini{
     font-size: 15px;
+  }
+}
+
+@media (max-width: 320px) { 
+  footer {
+    left: 15%;
+  }
+
+  a#vini{
+    font-size: 12px;
   }
 }
