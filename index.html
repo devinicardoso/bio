@@ -1,102 +1,105 @@
 </html>
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8">
-  <meta name="keywords"
-    content="HTML, CSS, JavaScript, portifolio, desenvolvedor front-end, desenvolvedor web, web, free, freelancer, vinicius cardoso, sites, programador">
-  <meta name="author" content="Vinicius Cardoso">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#646F58">
-  <link rel="shortcut icon" href="assets/image/vini.ico" type="image/x-icon" />
-  <link rel="apple-touch-icon" sizes="57x57" href="assets/image/vini.ico">
-  <link rel="apple-touch-icon" sizes="60x60" href="assets/image/vini.ico">
-  <link rel="stylesheet" type="text/css" href="assets/styles/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;900&display=swap" rel="stylesheet">
-  <title>Vinicius Cardoso</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="HTML, CSS, JavaScript, portifolio, desenvolvedor front-end, desenvolvedor web, web, free, freelancer, vinicius cardoso, sites, programador">
+    <meta name="author" content="Vinicius Cardoso">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#646F58">
+    <link rel="shortcut icon" href="assets/image/vini.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/image/vini.ico">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/image/vini.ico">
+    <link rel="stylesheet" type="text/css" href="assets/styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Vinicius Cardoso</title>
 </head>
 
 <body>
-  <header>
-    <img src="assets/image/vinic-pc.png" alt="foto vinicius">
-    <div id="texts">
-      <h1>Vinicius Cardoso</h1>
-      <p class="line typing-animation">Dev. Front-end </p>
-    </div>
-  </header>
+    <header>
+        <img src="assets/image/vinic-pc.png" alt="foto vinicius">
+        <div id="texts">
+            <h1>Vinicius Cardoso</h1>
+            <p id="description" class="line typing-animation">Dev. Front-end </p>
+        </div>
+    </header>
 
-  <section>
-    <!-- Linkedin -->
-    <a href="https://www.linkedin.com/in/viniccardoso/" target="_blank">
-      <div style="background: linear-gradient(90deg, rgba(255,255,255,0.45) 0%, rgba(255,255,255,0.85) 100%);">
-        <span class="iconify" data-icon="cib:linkedin-in"></span>
-        <h3>
-          Linkedin
-        </h3>
-      </div>
-    </a>
+    <section>
+        <!-- Linkedin -->
+        <a href="https://www.linkedin.com/in/viniccardoso/" class="card1" target="_blank">
+            <div style="background: linear-gradient(90deg, rgba(255,255,255,0.45) 0%, rgba(255,255,255,0.85) 100%);">
+                <span class="iconify" data-icon="cib:linkedin-in"></span>
+                <h3>
+                    Linkedin
+                </h3>
+            </div>
+        </a>
 
-    <!-- Github -->
-    <a href="https://github.com/devinicardoso" target="_blank">
-      <div style="background: linear-gradient(90deg, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0.45) 100%);">
-        <span class="iconify" data-inline="false" data-icon="feather:github"></span>
-        <h3>
-          GitHub
-        </h3>
-      </div>
-    </a>
+        <!-- Github -->
+        <a href="https://github.com/devinicardoso" class="card2" target="_blank">
+            <div style="background: linear-gradient(90deg, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0.45) 100%);">
+                <span class="iconify" data-inline="false" data-icon="feather:github"></span>
+                <h3>
+                    GitHub
+                </h3>
+            </div>
+        </a>
 
-    <!--Instagram -->
-    <a href="https://www.instagram.com/c4rdos0_/" target="_blank">
-      <div style="background: linear-gradient(90deg, rgba(255,255,255,0.45) 0%, rgba(255,255,255,0.85) 100%);">
-        <span class="iconify" data-inline="false" data-icon="cib:instagram"></span>
-        <h3>
-          Instagram
-        </h3>
-      </div>
-    </a>
+        <!--Instagram -->
+        <a href="https://www.instagram.com/c4rdos0_/" class="card3" target="_blank">
+            <div style="background: linear-gradient(90deg, rgba(255,255,255,0.45) 0%, rgba(255,255,255,0.85) 100%);">
+                <span class="iconify" data-inline="false" data-icon="cib:instagram"></span>
+                <h3>
+                    Instagram
+                </h3>
+            </div>
+        </a>
 
-    <!-- E-mail -->
-    <a href="mailto:contato.vinicardoso.dev.br" target="_blank">
+        <!-- E-mail -->
+        <a href="mailto:contato.vinicardoso.dev.br" class="card4" target="_blank">
 
-      <div style="background: linear-gradient(90deg, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0.45) 100%);">
-        <span class="iconify" data-icon="ic:baseline-email"></span>
-        <h3>
-          E-mail
-        </h3>
-      </div>
-    </a>
+            <div style="background: linear-gradient(90deg, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0.45) 100%);">
+                <span class="iconify" data-icon="ic:baseline-email"></span>
+                <h3>
+                    E-mail
+                </h3>
+            </div>
+        </a>
 
-    <!-- Portifólio -->
-    <a href="https://vinicardoso.dev.br" onclick="portifolio()" target="_blank">
-      <div
-        style="background: linear-gradient(90deg, rgba(255,255,255,0.45) 0%, rgba(255,255,255,0.85) 100%);">
-        <span class="iconify" data-icon="mdi:application-brackets"></span>
-        <h3>
-          Portifólio
-        </h3>
-      </div>
-    </a>
-  </section>
-  
-  <footer>
-    <p>made with 💕 by <a href="https://github.com/devinicardoso" id="vini">&copy Vinicius Cardoso</a>
-    </p>
-  </footer>
+        <!-- Portifólio -->
+        <a href="https://vinicardoso.dev.br" class="card5" onclick="portifolio()" target="_blank">
+            <div style="background: linear-gradient(90deg, rgba(255,255,255,0.45) 0%, rgba(255,255,255,0.85) 100%);">
+                <span class="iconify" data-icon="mdi:application-brackets"></span>
+                <h3>
+                    Portifólio
+                </h3>
+            </div>
+        </a>
+    </section>
+
+    <footer>
+        <p>made with 💕 by <a href="https://github.com/devinicardoso" id="vini">&copy Vinicius Cardoso</a>
+        </p>
+    </footer>
 
 
-  <script src="assets/js/main.js"></script>
-  <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CXC2PWK2FG"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-  		function gtag(){dataLayer.push(arguments);}
- 		 gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CXC2PWK2FG"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  		gtag('config', 'G-CXC2PWK2FG');
-  </script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-CXC2PWK2FG');
+    </script>
 
 </body>
 

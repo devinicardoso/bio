@@ -1,19 +1,19 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
 
 html {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 body {
-  background-color: #131219;
-  /* background-image: url('/assets/image/background.jpg');
+    background-color: #131219;
+    /* background-image: url('/assets/image/background.jpg');
   background-size: cover;
   background-repeat: no-repeat; */
 }
@@ -22,181 +22,181 @@ body {
 /* header */
 
 header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  
-
-  margin: 100px 0 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 100px 0 40px 0;
 }
+
 header img {
-  height: 125px;
-  width: 125px;
-  border-radius: 50%;
-  margin-bottom: 30px;    
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+    margin-bottom: 30px;
 }
 
 #texts {
-  margin-left: 20px;
+    margin-left: 20px;
 }
 
 header h1 {
-  font-size: 45px;
-  font-weight: 900;
-  color: #fff; 
-  text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.2em;
+    font-size: 45px;
+    font-weight: 900;
+    color: #fff;
+    text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.2em;
 }
 
-header p.line {
-  border-right: 2px solid rgba(255, 255, 255, .75);
-  font-size: 130%;
-  color: #f7f0f0;
-  text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.2em;
-  text-align: center;
-  margin: 0 auto;
-  white-space: nowrap;
-  overflow: hidden;
+#description {
+    border-right: 2px solid rgba(255, 255, 255, .75);
+    font-size: 130%;
+    color: #8b8b8b;
+    text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.2em;
+    text-align: center;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 
 /* animation */
 
 .typing-animation {
-  animation: blinkCursor 1s steps(10) infinite normal, typing 1.7s steps(20) 1s normal both;
+    animation: blinkCursor 1s steps(10) infinite normal, typing 1.7s steps(20) 1s normal both;
 }
 
 @keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 7.4em;
-  }
+    from {
+        width: 0;
+    }
+    to {
+        width: 7.4em;
+    }
 }
 
-@keyframes blinkCursor{
-  from {
-    border-right-color: rgba(255, 255, 255, .75);
-  }
-  to {
-    border-right-color: transparent;
-    
-  }
+@keyframes blinkCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, .75);
+    }
+    to {
+        border-right-color: transparent;
+    }
 }
 
 
 /* section */
 
-section{
-	display: flex;
-	justify-items: center;
-	flex-wrap: wrap;
-	flex-grow: 1;
-	margin: 20px;
+section {
+    display: flex;
+    justify-items: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    margin: 20px;
 }
 
-section a{
-  text-decoration: none;
-  flex-basis: 270px;
-  justify-content: space-between;
-  flex-grow: 1;
-  margin: 20px;
+section a {
+    text-decoration: none;
+    flex-basis: 270px;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin: 20px;
 }
 
-section div{
-  min-height: 50px;
-  border-radius: 40px;
-  display: flex;
-  flex-direction: colunm;
-  justify-content: center;
-  align-items: center;
-  padding: 4px;
-  border: 3px solid #17171C;
+.card1,
+.card2,
+.card3,
+.card4,
+.card5 {
+    visibility: hidden;
 }
 
-section div:hover{
-  border: 3px solid #fff;
+section div {
+    min-height: 50px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: colunm;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    border: 3px solid #17171C;
+    transition: .8s;
 }
 
-section div .iconify{
-  font-size: 25px;
-  margin: 10px 25px 10px 0;
-  color: #000;
+section div:hover {
+    border: 3px solid rgb(128, 3, 3);
 }
 
-section div h3{
-  text-align: center;
-  line-height: 23px;
-  font-weight: 600;
-  font-size: 16px;
-  color: #000;
+section div .iconify {
+    font-size: 25px;
+    margin: 10px 25px 10px 0;
+    color: #000;
+}
+
+section div h3 {
+    text-align: center;
+    line-height: 23px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #000;
 }
 
 footer {
-  padding-top: 50px;
-  display: table;
-  margin: 0 auto 0 auto;
-  color: #7a7a7a;
+    padding-top: 50px;
+    display: table;
+    margin: 0 auto 0 auto;
+    color: #7a7a7a;
 }
 
-a#vini{
-  font-size: 18px;
-  font-weight: 600;
-  text-decoration: none;
-  color: #ffffff;
-  text-shadow: black 0.1em 0.1em 0.2em;
-
+a#vini {
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #ffffff;
+    text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 a#vini:hover {
-  color: #858181;
+    color: #858181;
 }
 
-@media (max-width: 600px){ 
-  header {
-    margin: 50px 0 25px 0;
-  }
-  
-  header h1 {
-    font-size: 20px;
-  }
-
-  header p.line {
-    font-size: 85%;
-  }
-
-  section{
-    margin: 0;
-  }
-
-  footer {
-    width: 320px;
-    margin-top: 100px;
-    position: relative;
-    left: 10%;
-  }
+@media (max-width: 600px) {
+    header {
+        margin: 50px 0 25px 0;
+    }
+    header h1 {
+        font-size: 20px;
+    }
+    header p.line {
+        font-size: 85%;
+    }
+    section {
+        margin: 0;
+    }
+    footer {
+        width: 320px;
+        margin-top: 100px;
+        position: relative;
+        left: 10%;
+    }
 }
 
 @media (max-width: 425px) {
-  header {
-    flex-direction: column;
-  }
-
-  footer {
-    left: 7%;
-  }
-  a#vini{
-    font-size: 15px;
-  }
+    header {
+        flex-direction: column;
+    }
+    footer {
+        left: 7%;
+    }
+    a#vini {
+        font-size: 15px;
+    }
 }
 
-@media (max-width: 320px) { 
-  footer {
-    left: 15%;
-  }
-
-  a#vini{
-    font-size: 12px;
-  }
+@media (max-width: 320px) {
+    footer {
+        left: 15%;
+    }
+    a#vini {
+        font-size: 12px;
+    }
 }
