@@ -13,9 +13,6 @@ html {
 
 body {
     background-color: #131219;
-    /* background-image: url('/assets/image/background.jpg');
-  background-size: cover;
-  background-repeat: no-repeat; */
 }
 
 
@@ -142,7 +139,7 @@ section div h3 {
 
 footer {
     padding-top: 50px;
-    display: table;
+    text-align: center;
     margin: 0 auto 0 auto;
     color: #7a7a7a;
 }
@@ -163,20 +160,17 @@ a#vini:hover {
     header {
         margin: 50px 0 25px 0;
     }
+
     header h1 {
         font-size: 20px;
     }
+
     header p.line {
         font-size: 85%;
     }
+
     section {
         margin: 0;
-    }
-    footer {
-        width: 320px;
-        margin-top: 100px;
-        position: relative;
-        left: 10%;
     }
 }
 
@@ -184,9 +178,11 @@ a#vini:hover {
     header {
         flex-direction: column;
     }
+
     footer {
-        left: 7%;
+        font-size: 15px;    
     }
+
     a#vini {
         font-size: 15px;
     }
@@ -194,8 +190,9 @@ a#vini:hover {
 
 @media (max-width: 320px) {
     footer {
-        left: 15%;
+        font-size: 12px;    
     }
+
     a#vini {
         font-size: 12px;
     }
