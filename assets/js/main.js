@@ -1,4 +1,4 @@
-window.sr = ScrollReveal({ reset: true });
+window.sr = ScrollReveal();
 
 sr.reveal('.card1', {
     rotate: { x: 0, y: 80, z: 0 },
