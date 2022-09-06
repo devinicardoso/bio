@@ -114,7 +114,7 @@ section {
     justify-items: center;
     flex-wrap: wrap;
     flex-grow: 1;
-    margin: 100px auto;
+    margin: 145px auto 25px auto;
 }
 
 section a {
@@ -161,6 +161,18 @@ section div h3 {
     font-weight: 600;
     font-size: 16px;
     color: #E1E1E6;
+}
+
+#contentsEmail {
+    width: 70%;
+    margin: 0 auto 80px auto;
+    text-align: center;
+
+    color: #DDDDE3;
+}
+
+#contentsEmail span {
+    color: #8D8D99;
 }
 
 footer {
