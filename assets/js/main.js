@@ -20,7 +20,7 @@ sr.reveal('.card4', {
     duration: 2500
 });
 
-sr.reveal('.card5', {
+sr.reveal('#contentsEmail', {
     rotate: { x: 0, y: 90, z: 0 },
-    duration: 3500
+    duration: 2500
 });
