@@ -19,60 +19,60 @@
 
 <body>
     <div id="container">
-        <header>
-            <div id="cardImg">
-                <img src="assets/image/vini-real.png" alt="foto vinicius" width="100%" height="auto" id="imgVini">
+        <header class="header">
+            <div class="header__cardImg">
+                <img src="assets/image/vini-real.png" alt="foto vinicius" width="100%" height="auto" class="header__img-vini">
             </div>
-            <div id="texts">
-                <h1>Vinicius Cardoso</h1>
-                <p id="description" class="line typing-animation">Dev. Front-end </p>
+            <div class="header__texts">
+                <h1 class="header__title">Vinicius Cardoso</h1>
+                <p class="header__description header__typing-animation">Dev. Front-end </p>
             </div>
         </header>
     
-        <section>
+        <section class="section">
             <!-- Linkedin -->
-            <a href="https://www.linkedin.com/in/vinicdev/" class="card1" target="_blank">
-                <div style="background-color: #1818188f;">
+            <a href="https://www.linkedin.com/in/vinicdev/" class="section__link-card card1" target="_blank">
+                <div style="background-color: #1818188f;" class="section__card-space">
                     <span class="iconify" data-icon="cib:linkedin-in"></span>
-                    <h2>
+                    <h2 class="section__title-card">
                         Linkedin
                     </h2>
                 </div>
             </a>
     
             <!-- Github -->
-            <a href="https://github.com/vinicdev" class="card2" target="_blank">
-                <div style="background-color: #1818188f;">
+            <a href="https://github.com/vinicdev" class="section__link-card card2" target="_blank">
+                <div style="background-color: #1818188f;" class="section__card-space">
                     <span class="iconify" data-inline="false" data-icon="feather:github"></span>
-                    <h2>
+                    <h2 class="section__title-card">
                         GitHub
                     </h2>
                 </div>
             </a>
     
             <!--Instagram -->
-            <a href="https://www.instagram.com/c4rdos0_/" class="card3" target="_blank">
-                <div style="background-color: #1818188f;">
+            <a href="https://www.instagram.com/c4rdos0_/" class="section__link-card card3" target="_blank">
+                <div style="background-color: #1818188f;" class="section__card-space">
                     <span class="iconify" data-inline="false" data-icon="cib:instagram"></span>
-                    <h2>
+                    <h2 class="section__title-card">
                         Instagram
                     </h2>
                 </div>
             </a>
     
             <!-- Portifólio -->
-            <a href="https://vinicardoso.dev.br" class="card4" onclick="portifolio()" target="_blank">
-                <div style="background-color: #1818188f;">
+            <a href="https://vinicardoso.dev.br" class="section__link-card card4" onclick="portifolio()" target="_blank">
+                <div style="background-color: #1818188f;" class="section__card-space">
                     <span class="iconify" data-icon="mdi:application-brackets"></span>
-                    <h2>
+                    <h2 class="section__title-card">
                         Portfólio
                     </h2>
                 </div>
             </a>
 
         </section>
+        
         <!-- E-mail -->
-
         <div id="contentsEmail">
                 <h2>
                     Entre em contato, mande um e-mail:
@@ -83,10 +83,10 @@
         </div>
     </div>
 
-    <footer>
-        <p id="textFooter">
+    <footer class="footer">
+        <p class="footer__paragrafo">
             made with 💕 by 
-            <a href="https://github.com/vinicdev" id="vini">
+            <a href="https://github.com/vinicdev" class="footer__link">
                 &copy; Vinicius Cardoso
             </a>
         </p>
