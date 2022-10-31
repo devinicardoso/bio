@@ -60,7 +60,7 @@ header {
 }
 
 header h1 {
-    font-size: 45px;
+    font-size: 2.8125rem;
     font-weight: 900;
     color: #E1E1E6;
     text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.2em;
@@ -68,7 +68,7 @@ header h1 {
 
 #description {
     border-right: 2px solid rgba(255, 255, 255, .75);
-    font-size: 18px;
+    font-size: 1.125rem
     font-weight: lighter;
     color: #8D8D99;
     text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.2em;
@@ -148,16 +148,16 @@ section div:hover {
 }
 
 section div .iconify {
-    font-size: 25px;
+    font-size: 1.5625rem;
     margin: 10px 25px 10px 0;
     color: #E1E1E6;
 }
 
-section div h3 {
+section div h2 {
     text-align: center;
     line-height: 23px;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 1rem;
     color: #E1E1E6;
 }
 
@@ -167,6 +167,10 @@ section div h3 {
     text-align: center;
 
     color: #DDDDE3;
+}
+
+#contentsEmail h2 {
+    font-size: 1.5rem;
 }
 
 #contentsEmail span {
@@ -189,7 +193,7 @@ footer {
 }
 
 a#vini {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 600;
     text-decoration: none;
     color: #ffffff;
@@ -212,13 +216,18 @@ a#vini:hover {
 }
 
 @media (max-width: 870px) {
-    header img {
-        width: 175px;
-        height: 238px;
-    }
-
     section {
         width: 70%;
+    }
+
+    #contentsEmail h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 850px) {
+    section {
+        width: 80%;
     }
 }
 
@@ -228,13 +237,19 @@ a#vini:hover {
     }
 }
 
+@media (max-width: 617px) {
+    #contentsEmail h2 {
+        font-size: 1rem;
+    }
+}
+
 @media (max-width: 600px) {
     header {
         margin: 50px 0 25px 0;
     }
 
     header h1 {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     header p.line {
@@ -244,6 +259,19 @@ a#vini:hover {
     section {
         width: 90%;
         margin-top: 40px;
+    }
+}
+
+@media (max-width: 515px) {
+    #container {
+        width: 90%;
+    }
+    section {
+        width: 90%;
+    }
+
+    #contentsEmail {
+        width: 80%;
     }
 }
 
@@ -266,20 +294,30 @@ a#vini:hover {
     }
 
     footer {
-        font-size: 15px;    
+        font-size: .9375rem  
     }
 
     a#vini {
-        font-size: 15px;
+        font-size: .9375rem;
+    }
+}
+
+@media (max-width: 380px) {
+    #contentsEmail {
+        width: 95%;
+    } 
+
+    #contentsEmail h2{
+        margin-bottom: 15px;
     }
 }
 
 @media (max-width: 320px) {
     footer {
-        font-size: 12px;    
+        font-size: .75rem; 
     }
 
     a#vini {
-        font-size: 12px;
+        font-size: .75rem;
     }
 }
