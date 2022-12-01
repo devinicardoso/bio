@@ -25,6 +25,16 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.125);
   margin: 20px 0;
 }
+@media (max-width: 515px) {
+  #container {
+    width: 90%;
+  }
+}
+@media (max-width: 425px) {
+  #container {
+    width: 95%;
+  }
+}
 
 .header {
   height: 30%;
@@ -41,9 +51,24 @@ body {
   height: auto;
   border: 1px solid #fff;
 }
+@media (max-width: 1021px) {
+  .header__cardImg {
+    width: 70%;
+  }
+}
+@media (max-width: 800px) {
+  .header__cardImg {
+    width: 85%;
+  }
+}
+@media (max-width: 425px) {
+  .header__cardImg {
+    width: 95%;
+  }
+}
 .header__img-vini {
   border-radius: 50%;
-  padding: 15px;
+  padding: 5px;
 }
 .header__texts {
   margin-left: 20px;
@@ -64,6 +89,11 @@ body {
   margin: 0 auto;
   white-space: nowrap;
   overflow: hidden;
+}
+@media (max-width: 425px) {
+  .header__description {
+    margin-bottom: 20px;
+  }
 }
 .header__typing-animation {
   -webkit-animation: blinkCursor 1s steps(10) infinite normal, typing 1.7s steps(20) 1s normal both;
@@ -101,6 +131,28 @@ body {
     border-right-color: transparent;
   }
 }
+@media (max-width: 1021px) {
+  .header {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+@media (max-width: 600px) {
+  .header {
+    margin: 50px 0 25px 0;
+  }
+  .header__title {
+    font-size: 1.25rem;
+  }
+  .header__description {
+    font-size: 85%;
+  }
+}
+@media (max-width: 425px) {
+  .header {
+    flex-direction: column;
+  }
+}
 
 .section {
   width: 70%;
@@ -108,20 +160,14 @@ body {
   justify-items: center;
   flex-wrap: wrap;
   flex-grow: 1;
-  margin: 145px auto 25px auto;
+  gap: 20px;
+  margin: 145px auto 45px auto;
 }
 .section__link-card {
   text-decoration: none;
   flex-basis: 270px;
   justify-content: space-between;
   flex-grow: 1;
-  margin: 20px;
-}
-.section .card1,
-.section .card2,
-.section .card3,
-.section .card4 {
-  visibility: hidden;
 }
 .section__card-space {
   min-height: 50px;
@@ -149,18 +195,75 @@ body {
   font-size: 1rem;
   color: #E1E1E6;
 }
+@media (max-width: 870px) {
+  .section__title-card {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 870px) {
+  .section {
+    width: 70%;
+  }
+}
+@media (max-width: 850px) {
+  .section {
+    width: 80%;
+  }
+}
+@media (max-width: 600px) {
+  .section {
+    width: 90%;
+    margin-top: 40px;
+  }
+}
+@media (max-width: 515px) {
+  .section {
+    width: 98%;
+  }
+}
+
+#dividingLine {
+  width: 50%;
+  height: 1px;
+  background-color: #323238;
+  border: none;
+  margin: 0 auto;
+}
 
 #contentsEmail {
   width: 70%;
-  margin: 0 auto 80px auto;
+  margin: 45px auto 80px auto;
   text-align: center;
-  color: #DDDDE3;
+  color: #262626;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 8px;
 }
 #contentsEmail h2 {
   font-size: 1.5rem;
 }
+@media (max-width: 617px) {
+  #contentsEmail h2 {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 380px) {
+  #contentsEmail h2 {
+    margin-bottom: 15px;
+  }
+}
 #contentsEmail span {
-  color: #8D8D99;
+  color: #565656;
+}
+@media (max-width: 600px) {
+  #contentsEmail {
+    width: 90%;
+  }
+}
+@media (max-width: 380px) {
+  #contentsEmail {
+    width: 95%;
+  }
 }
 
 .footer {
@@ -187,98 +290,23 @@ body {
 .footer__link:hover {
   color: #858181;
 }
-
-@media (max-width: 1021px) {
-  .header {
-    flex-direction: column;
-    gap: 15px;
-  }
-  .header__cardImg {
-    width: 70%;
-  }
-}
-@media (max-width: 870px) {
-  .section {
-    width: 70%;
-  }
-  .section__title-card {
-    font-size: 1.2rem;
-  }
-}
-@media (max-width: 850px) {
-  .section {
-    width: 80%;
-  }
-}
-@media (max-width: 800px) {
-  .section__cardImg {
-    width: 85%;
-  }
-}
-@media (max-width: 617px) {
-  #contentsEmail h2 {
-    font-size: 1rem;
-  }
-}
-@media (max-width: 600px) {
-  .header {
-    margin: 50px 0 25px 0;
-  }
-  .header__title {
-    font-size: 1.25rem;
-  }
-  .header__description {
-    font-size: 85%;
-  }
-  .section {
-    width: 90%;
-    margin-top: 40px;
-  }
-}
-@media (max-width: 515px) {
-  #container {
-    width: 90%;
-  }
-  .section {
-    width: 90%;
-  }
-  #contentsEmail {
-    width: 80%;
-  }
-}
 @media (max-width: 425px) {
-  #container {
-    width: 95%;
-  }
-  .header {
-    flex-direction: column;
-  }
-  .header__cardImg {
-    width: 95%;
-  }
-  .header__description {
-    margin-bottom: 20px;
-  }
-  .footer {
-    font-size: 0.9375rem;
-  }
   .footer__link {
     font-size: 0.9375rem;
   }
 }
-@media (max-width: 380px) {
-  #contentsEmail {
-    width: 95%;
+@media (max-width: 320px) {
+  .footer__link {
+    font-size: 0.75rem;
   }
-  #contentsEmail h2 {
-    margin-bottom: 15px;
+}
+@media (max-width: 425px) {
+  .footer {
+    font-size: 0.9375rem;
   }
 }
 @media (max-width: 320px) {
   .footer {
-    font-size: 0.75rem;
-  }
-  .footer__link {
     font-size: 0.75rem;
   }
 }/*# sourceMappingURL=style.css.map */

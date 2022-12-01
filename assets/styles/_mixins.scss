@@ -1,0 +1,13 @@
+@mixin align-center($alignItems, $justifyContent) {
+    display: flex;
+    align-items: $alignItems;
+    justify-content: $justifyContent;
+}
+
+@mixin margin($mtb, $mrl) {
+    margin: $mtb $mrl;
+}
+
+@mixin margin-all($mt, $mr, $mb, $ml) {
+    margin: $mt $mr $mb $ml;
+}

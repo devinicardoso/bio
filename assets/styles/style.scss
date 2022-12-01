@@ -1,3 +1,5 @@
+@import './mixins';
+
 * {
     margin: 0;
     padding: 0;
@@ -25,6 +27,14 @@ body {
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.125);
     margin: 20px 0;
+
+    @media (max-width: 515px) {
+        width: 90%;
+    }
+
+    @media (max-width: 425px) {
+        width: 95%;
+    }
 }
 
 .header {
@@ -41,11 +51,25 @@ body {
         width: 40%;
         height: auto;
         border: 1px solid #fff;
+        
+        @media (max-width: 1021px) {
+            width: 70%;
+        }
+
+        @media (max-width: 800px) {
+            width: 85%;
+        }
+
+        @media (max-width: 425px) {
+            width: 95%;
+        }
+        
+
     }
 
     &__img-vini {
         border-radius: 50%;
-        padding: 15px;
+        padding: 5px;
     }
 
     &__texts {
@@ -69,6 +93,11 @@ body {
         margin: 0 auto;
         white-space: nowrap;
         overflow: hidden;
+
+        @media (max-width: 425px) {
+            margin-bottom: 20px;
+        }
+        
     }
 
     &__typing-animation {
@@ -92,6 +121,27 @@ body {
             border-right-color: transparent;
         }
     }
+
+    @media (max-width: 1021px) {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    @media (max-width: 600px) {
+        margin: 50px 0 25px 0;
+
+        &__title {
+            font-size: 1.25rem;
+        }
+
+        &__description {
+            font-size: 85%;
+        }   
+    }
+
+    @media (max-width: 425px) {
+        flex-direction: column;
+    }
 }
 
 .section {
@@ -100,21 +150,14 @@ body {
     justify-items: center;
     flex-wrap: wrap;
     flex-grow: 1;
-    margin: 145px auto 25px auto;
+    gap: 20px;
+    @include margin-all(145px, auto, 45px, auto);
 
     &__link-card {
         text-decoration: none;
         flex-basis: 270px;
         justify-content: space-between;
         flex-grow: 1;
-        margin: 20px;
-    }
-
-    .card1,
-    .card2,
-    .card3,
-    .card4 {
-        visibility: hidden;
     }
 
     &__card-space {
@@ -145,21 +188,70 @@ body {
         font-weight: 600;
         font-size: 1rem;
         color: #E1E1E6;
+
+        @media (max-width: 870px) {
+            font-size: 1.2rem;
+        }
+    }
+
+    @media (max-width: 870px) {
+        width: 70%;
+    }
+
+    @media (max-width: 850px) {
+        width: 80%;
+    }
+    
+    @media (max-width: 600px) {
+        width: 90%;
+        margin-top: 40px;
+    }
+
+    @media (max-width: 515px) {
+        width: 98%;
     }
 }
 
+#dividingLine {
+    width: 50%;
+    height: 1px;
+    background-color: #323238;
+    border: none;
+    @include margin(0, auto);
+}
+
+
 #contentsEmail {
     width: 70%;
-    margin: 0 auto 80px auto;
+    @include margin-all(45px, auto, 80px, auto);
     text-align: center;
-    color: #DDDDE3;
+    color: #262626;
+    background-color: #ffffffcc;
+    padding: 10px;
+    border-radius: 8px;
 
     h2 {
         font-size: 1.5rem;
+
+        @media (max-width: 617px) {
+            font-size: 1rem;
+        }
+
+        @media (max-width: 380px) {
+            margin-bottom: 15px; 
+        }
     }
 
     span {
-        color: #8D8D99;
+        color: #565656;
+    }
+
+    @media (max-width: 600px) {
+        width: 90%;
+    }
+
+    @media (max-width: 380px) {
+        width: 95%; 
     }
 }
 
@@ -188,124 +280,22 @@ body {
         &:hover {
             color: #858181;
         }
-    }
-}
 
-
-@media (max-width: 1021px) {
-    .header {
-        flex-direction: column;
-        gap: 15px;
-
-        &__cardImg {
-            width: 70%;
-        }
-    }
-}
-
-@media (max-width: 870px) {
-    .section {
-        width: 70%;
-
-        &__title-card {
-            font-size: 1.2rem;
-        }
-    }
-}
-
-@media (max-width: 850px) {
-    .section {
-        width: 80%;
-    }
-}
-
-@media (max-width: 800px) {
-    .section__cardImg {
-        width: 85%;
-    }
-}
-
-@media (max-width: 617px) {
-    #contentsEmail h2 {
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 600px) {
-    .header {
-        margin: 50px 0 25px 0;
-
-        &__title {
-            font-size: 1.25rem;
-        }
-
-        &__description {
-            font-size: 85%;
-        }
-    }
-
-    .section {
-        width: 90%;
-        margin-top: 40px;
-    }    
-}
-
-@media (max-width: 515px) {
-    #container {
-        width: 90%;
-    }
-    .section {
-        width: 90%;
-    }
-
-    #contentsEmail {
-        width: 80%;
-    }
-}
-
-@media (max-width: 425px) {
-    #container {
-        width: 95%;
-    }
-
-    .header {
-        flex-direction: column;
-
-        &__cardImg {
-            width: 95%;
-        }
-        
-        &__description {
-            margin-bottom: 20px;
-        }
-    }
-
-    .footer {
-        font-size: .9375rem; 
-
-        &__link {
+        @media (max-width: 425px) {
             font-size: .9375rem;
         }
-    }
-}
 
-@media (max-width: 380px) {
-    #contentsEmail {
-        width: 95%;
-
-        h2{
-            margin-bottom: 15px;
-        }
-    } 
-}
-
-@media (max-width: 320px) {
-    .footer {
-        font-size: .75rem; 
-
-        &__link {
+        @media (max-width: 320px) {
             font-size: .75rem;
+    
         }
     }
 
+    @media (max-width: 425px) {
+        font-size: .9375rem; 
+    }
+
+    @media (max-width: 320px) {
+        font-size: .75rem; 
+    }
 }
