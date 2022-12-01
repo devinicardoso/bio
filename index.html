@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <div id="container">
+    <main id="container">
         <header class="header">
             <div class="header__cardImg">
                 <img src="assets/image/vini-real.png" alt="foto vinicius" width="100%" height="auto" class="header__img-vini">
@@ -31,7 +31,7 @@
     
         <section class="section">
             <!-- Linkedin -->
-            <a href="https://www.linkedin.com/in/vinicdev/" class="section__link-card card1" target="_blank">
+            <a href="https://www.linkedin.com/in/vinicdev/" class="section__link-card" target="_blank">
                 <div style="background-color: #1818188f;" class="section__card-space">
                     <span class="iconify" data-icon="cib:linkedin-in"></span>
                     <h2 class="section__title-card">
@@ -41,7 +41,7 @@
             </a>
     
             <!-- Github -->
-            <a href="https://github.com/vinicdev" class="section__link-card card2" target="_blank">
+            <a href="https://github.com/vinicdev" class="section__link-card" target="_blank">
                 <div style="background-color: #1818188f;" class="section__card-space">
                     <span class="iconify" data-inline="false" data-icon="feather:github"></span>
                     <h2 class="section__title-card">
@@ -51,7 +51,7 @@
             </a>
     
             <!--Instagram -->
-            <a href="https://www.instagram.com/c4rdos0_/" class="section__link-card card3" target="_blank">
+            <a href="https://www.instagram.com/c4rdos0_/" class="section__link-card" target="_blank">
                 <div style="background-color: #1818188f;" class="section__card-space">
                     <span class="iconify" data-inline="false" data-icon="cib:instagram"></span>
                     <h2 class="section__title-card">
@@ -61,7 +61,7 @@
             </a>
     
             <!-- Portifólio -->
-            <a href="https://vinicardoso.dev.br" class="section__link-card card4" onclick="portifolio()" target="_blank">
+            <a href="https://vinicardoso.dev.br" class="section__link-card" onclick="portifolio()" target="_blank">
                 <div style="background-color: #1818188f;" class="section__card-space">
                     <span class="iconify" data-icon="mdi:application-brackets"></span>
                     <h2 class="section__title-card">
@@ -72,16 +72,19 @@
 
         </section>
         
+        <hr id="dividingLine">
+        
         <!-- E-mail -->
-        <div id="contentsEmail">
-                <h2>
-                    Entre em contato, mande um e-mail:
-                </h2>
-                <span>
-                    contato@vinic.dev
-                </span>
-        </div>
-    </div>
+        <section id="contentsEmail">
+            <h3>
+                Entre em contato, mande um e-mail:
+            </h3>
+            <span>
+                contato@vinic.dev
+            </span>
+        </section>
+    </main>
+
 
     <footer class="footer">
         <p class="footer__paragrafo">
@@ -93,7 +96,6 @@
     </footer>
 
 
-    <script src="assets/js/main.js"></script>
     <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
