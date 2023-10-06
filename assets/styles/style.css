@@ -302,4 +302,15 @@ body {
   .footer {
     font-size: 0.75rem;
   }
+}
+
+#tag-new {
+  background-color: #fff;
+  color: #000;
+  position: absolute;
+  margin-top: -72px;
+  margin-right: -285px;
+  padding: 3px;
+  font-size: 0.875rem;
+  font-weight: 300;
 }/*# sourceMappingURL=style.css.map */
